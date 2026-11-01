@@ -1,0 +1,49 @@
+{
+  "specialties": [
+    {
+      "slug": "paediatrics",
+      "study": [
+        "neonatal-jaundice",
+        "balanitis-child",
+        "hearing-loss-child",
+        "new-onset-type-1-diabetes-child"
+      ],
+      "assessment": [
+        "neonatal-jaundice-sba",
+        "paediatrics-reflection",
+        "gp-child-presentations-sba"
+      ]
+    },
+    {
+      "slug": "general-practice",
+      "study": [
+        "tinea-ringworm-adults"
+      ],
+      "assessment": [
+        "gp-reflection",
+        "gp-skin-sba"
+      ]
+    },
+    {
+      "slug": "psychiatry",
+      "study": [],
+      "assessment": [
+        "psychiatry-reflection"
+      ]
+    },
+    {
+      "slug": "obs-gynae",
+      "study": [],
+      "assessment": [
+        "obs-gynae-reflection"
+      ]
+    },
+    {
+      "slug": "cardiology",
+      "study": [],
+      "assessment": [
+        "cardiology-reflection"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "obs-gynae-reflection",
+  "title": "Obs and Gynae: reflection and OSCE prompts",
+  "type": "Reflection",
+  "description": "Obstetric history, examination and consent practice.",
+  "questions": [
+    { "q": "OSCE: Take an obstetric history from a woman at 28 weeks.", "answer": "Model: presenting issue, GTPAL, previous pregnancies and deliveries, current pregnancy (movements, bleeding, headaches), medical, drug and social history." },
+    { "q": "How did I ensure consent and dignity when observing an intimate encounter?", "answer": "Model: ask permission, offer chaperone, respect refusal, thank the patient." },
+    { "q": "OSCE: Explain how to measure fundal height.", "answer": "Model: consent, position, measure from fundus to symphysis pubis, compare with gestation in weeks, escalate if discrepant." }
+  ]
+}

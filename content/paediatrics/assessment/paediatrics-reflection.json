@@ -1,0 +1,11 @@
+{
+  "id": "paediatrics-reflection",
+  "title": "Paediatrics: reflection and OSCE prompts",
+  "type": "Reflection",
+  "description": "Prompts for portfolio reflection and practice stations.",
+  "questions": [
+    { "q": "What did I learn today that changed how I approach an unwell infant?", "answer": "Model: describe the learning, why it mattered, what I will do differently, and one action with a date." },
+    { "q": "OSCE: Explain to a parent why their baby needs phototherapy.", "answer": "Model: introduce, check understanding, explain bilirubin simply, how light helps, safety (eyes, feeding), what to expect, check questions, safety-net." },
+    { "q": "How would I communicate with a worried parent while a clinician is busy?", "answer": "Model: acknowledge, be honest about my role, offer to find the right person, do not give clinical advice beyond my role." }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Obstetrics and Gynaecology",
+  "icon": "🤰",
+  "summary": "Antenatal, intrapartum and postnatal care, plus gynaecological presentations. Sensitive history taking and consent are central.",
+  "placementFocus": ["Antenatal care and screening", "Obstetric history and examination", "Early pregnancy problems", "Sensitive communication and consent"],
+  "coreTopics": ["Obstetric history (GTPAL)", "Antenatal booking and screening", "Abdominal palpation and fundal height", "Early pregnancy bleeding", "Pre-eclampsia", "Menstrual disorders", "Contraception"],
+  "recommendations": [
+    "Practise a structured obstetric history and summarise it as 'G_P_ at _ weeks'.",
+    "Ask patients for permission explicitly before observing; thank them afterwards.",
+    "Link maternal conditions to neonatal outcomes (this connects with your paediatric learning)."
+  ],
+  "resources": [
+    { "name": "RCOG Green-top guidelines", "url": "https://www.rcog.org.uk/guidance/browse-all-guidance/green-top-guidelines/" },
+    { "name": "NICE Antenatal care NG201", "url": "https://www.nice.org.uk/guidance/ng201" }
+  ]
+}

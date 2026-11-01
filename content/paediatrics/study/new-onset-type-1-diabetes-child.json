@@ -1,0 +1,128 @@
+{
+  "id": "new-onset-type-1-diabetes-child",
+  "title": "Possible type 1 diabetes in a child",
+  "date": "2026-11-01",
+  "setting": "GP surgery, child (age to confirm)",
+  "tags": [
+    "endocrine",
+    "emergency",
+    "diabetes"
+  ],
+  "presentation": "A child with possible type 1 diabetes; typical symptoms are polyuria, polydipsia, weight loss and tiredness. Age to be added.",
+  "framework": {
+    "title": "Recognise, confirm, escalate",
+    "groups": [
+      {
+        "name": "Classic features (the 4 Ts)",
+        "items": [
+          "Toilet (polyuria, bedwetting)",
+          "Thirsty",
+          "Thinner (weight loss)",
+          "Tired"
+        ]
+      },
+      {
+        "name": "Other features",
+        "items": [
+          "Recent infection",
+          "Blurred vision",
+          "Thrush or balanitis",
+          "Abdominal pain, vomiting"
+        ]
+      },
+      {
+        "name": "DKA signs",
+        "items": [
+          "Deep sighing (Kussmaul) breathing",
+          "Ketotic breath",
+          "Dehydration",
+          "Reduced consciousness"
+        ]
+      },
+      {
+        "name": "Differentials",
+        "items": [
+          "Type 2 or monogenic diabetes",
+          "UTI",
+          "Psychogenic polydipsia",
+          "Coeliac and hypothyroidism"
+        ]
+      }
+    ]
+  },
+  "pathway": {
+    "title": "Suspected T1DM",
+    "mermaid": "flowchart TD\n A[Symptoms of diabetes] --> B[Same-day capillary glucose and ketones]\n B --> C{Glucose raised or ketones present}\n C -- Yes --> D[Same-day referral to paediatric diabetes team or emergency admission]\n C -- No --> E[Consider other causes and safety-net]\n D --> F[Do not delay for HbA1c]"
+  },
+  "tables": [
+    {
+      "title": "Diagnostic thresholds (verify NICE NG18)",
+      "headers": [
+        "Test",
+        "Result"
+      ],
+      "rows": [
+        [
+          "Random glucose",
+          "11.1 mmol/L or more with symptoms"
+        ],
+        [
+          "Fasting glucose",
+          "7.0 mmol/L or more"
+        ]
+      ]
+    }
+  ],
+  "investigations": [
+    {
+      "test": "Capillary glucose",
+      "why": "Immediate"
+    },
+    {
+      "test": "Urine or blood ketones",
+      "why": "Detect ketosis, DKA risk"
+    },
+    {
+      "test": "Venous gas and U&E in hospital",
+      "why": "Severity of DKA"
+    }
+  ],
+  "management": [
+    "Same-day specialist referral for suspected T1DM; do not wait for an HbA1c.",
+    "Unwell, vomiting or ketotic: emergency admission.",
+    "Do not start treatment in the community.",
+    "Support the family: explain clearly, address fear, and signpost to the team.",
+    "Safety-netting: urgent review if vomiting, abdominal pain, drowsiness or fast breathing."
+  ],
+  "redFlags": [
+    "Vomiting with abdominal pain",
+    "Fast deep breathing",
+    "Drowsiness or confusion",
+    "Severe dehydration",
+    "Ketones present"
+  ],
+  "pearls": [
+    "Think of diabetes in a child with bedwetting after being dry.",
+    "Capillary glucose is quick and cheap: do it."
+  ],
+  "lookUp": [
+    "NICE NG18 diagnosis and DKA management",
+    "BSPED DKA guideline",
+    "Fluid caution in DKA (cerebral oedema)"
+  ],
+  "selfTest": [
+    {
+      "q": "What 2 tests in clinic confirm the urgency?",
+      "a": "Capillary glucose and ketones."
+    },
+    {
+      "q": "Should you wait for HbA1c?",
+      "a": "No, refer same day."
+    }
+  ],
+  "sources": [
+    "NICE NG18 Diabetes (children and young people)",
+    "BSPED",
+    "Diabetes UK 4Ts"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "topic-slug",
+  "title": "Topic title",
+  "date": "2026-11-01",
+  "setting": "Ward / clinic / ward round, age group",
+  "tags": ["tag1", "tag2"],
+  "presentation": "Anonymised one-liner.",
+  "framework": {
+    "title": "Systematic approach",
+    "groups": [
+      { "name": "Group 1", "items": ["Cause or step"] }
+    ]
+  },
+  "pathway": { "title": "Pathway", "mermaid": "flowchart LR\n A --> B" },
+  "tables": [
+    { "title": "Table title", "headers": ["Col 1", "Col 2"], "rows": [["a", "b"]] }
+  ],
+  "investigations": [{ "test": "Test", "why": "Reason" }],
+  "management": ["Step"],
+  "redFlags": ["Flag"],
+  "pearls": ["What was taught, in my own words"],
+  "lookUp": ["Question to research"],
+  "selfTest": [{ "q": "Question?", "a": "Answer" }],
+  "sources": ["NICE guideline reference"]
+}

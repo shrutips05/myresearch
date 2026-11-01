@@ -1,0 +1,16 @@
+{
+  "name": "Psychiatry",
+  "icon": "🧠",
+  "summary": "Mental health assessment, risk, and the biopsychosocial formulation.",
+  "placementFocus": ["Mental state examination", "Risk assessment", "Biopsychosocial formulation", "Mental Health Act basics"],
+  "coreTopics": ["Mental state examination", "Depression", "Anxiety disorders", "Psychosis", "Self-harm and suicide risk", "Capacity and consent", "Mental Health Act basics"],
+  "recommendations": [
+    "Learn the MSE headings (appearance, behaviour, speech, mood, thought, perception, cognition, insight) and practise describing a patient in that order.",
+    "Always include a risk statement: to self, to others, from others.",
+    "Reflect on your own communication: open questions, silence, empathy."
+  ],
+  "resources": [
+    { "name": "NICE guidance - mental health", "url": "https://www.nice.org.uk/guidance/conditions-and-diseases/mental-health-and-behavioural-conditions" },
+    { "name": "Royal College of Psychiatrists", "url": "https://www.rcpsych.ac.uk/" }
+  ]
+}

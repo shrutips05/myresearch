@@ -1,0 +1,44 @@
+{
+  "id": "gp-skin-sba",
+  "title": "Tinea: SBAs",
+  "type": "SBA",
+  "description": "Recognition and management of ringworm.",
+  "questions": [
+    {
+      "q": "Which description best fits tinea corporis?",
+      "options": [
+        "Silvery plaques on extensor surfaces",
+        "Annular scaly patch with raised edge and central clearing",
+        "Vesicles in a dermatomal pattern",
+        "Herald patch only",
+        "Honey-crusted lesions"
+      ],
+      "answer": 1,
+      "explanation": "Active edge with central clearing is characteristic."
+    },
+    {
+      "q": "Why avoid steroid-only cream in suspected tinea?",
+      "options": [
+        "Causes allergy",
+        "Masks the rash and worsens infection",
+        "Is ineffective on skin",
+        "Causes diabetes",
+        "Is unlicensed"
+      ],
+      "answer": 1,
+      "explanation": "Tinea incognito."
+    },
+    {
+      "q": "Which scenario most needs mycology before oral treatment?",
+      "options": [
+        "Small patch on arm",
+        "Nail disease",
+        "Mild athlete's foot",
+        "First groin rash",
+        "Mild itch"
+      ],
+      "answer": 1,
+      "explanation": "Nail and scalp disease need confirmation first."
+    }
+  ]
+}

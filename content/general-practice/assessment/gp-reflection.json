@@ -1,0 +1,11 @@
+{
+  "id": "gp-reflection",
+  "title": "General Practice: reflection and OSCE prompts",
+  "type": "Reflection",
+  "description": "Consultation skills and safety-netting practice.",
+  "questions": [
+    { "q": "Describe a consultation that went well. Which Calgary-Cambridge element made the difference?", "answer": "Model: name the element, give a specific example, state what to repeat." },
+    { "q": "OSCE: Take a history from a patient with a 2-week cough.", "answer": "Model: open question, SOCRATES-style cough details, red flags (haemoptysis, weight loss), smoking, ICE, summarise, safety-net." },
+    { "q": "What safety-netting advice would I give for a self-limiting illness?", "answer": "Model: expected course, specific warning signs, when and how to seek help." }
+  ]
+}

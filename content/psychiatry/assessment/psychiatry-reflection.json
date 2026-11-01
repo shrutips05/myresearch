@@ -1,0 +1,11 @@
+{
+  "id": "psychiatry-reflection",
+  "title": "Psychiatry: reflection and OSCE prompts",
+  "type": "Reflection",
+  "description": "Mental state examination and risk practice.",
+  "questions": [
+    { "q": "Write a short mental state examination for a patient I saw (anonymised).", "answer": "Model: appearance and behaviour, speech, mood and affect, thought form and content, perception, cognition, insight and risk." },
+    { "q": "OSCE: Ask about suicidal thoughts.", "answer": "Model: build rapport, ask directly and calmly, explore plans, intent, protective factors, escalate to the team." },
+    { "q": "How did I feel during the encounter and how did I look after myself?", "answer": "Model: honest reflection, support used, action." }
+  ]
+}

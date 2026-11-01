@@ -1,0 +1,124 @@
+{
+  "id": "balanitis-child",
+  "title": "Balanitis in a child",
+  "date": "2026-11-01",
+  "setting": "GP surgery, boy (age to confirm)",
+  "tags": [
+    "urology",
+    "genital",
+    "primary-care"
+  ],
+  "presentation": "A boy with a red, sore foreskin and glans, possibly with discharge. Age to be added.",
+  "framework": {
+    "title": "Causes by mechanism",
+    "groups": [
+      {
+        "name": "Infective",
+        "items": [
+          "Bacterial (including Group A strep)",
+          "Candida",
+          "Rarely sexually transmitted or linked to abuse, so consider safeguarding"
+        ]
+      },
+      {
+        "name": "Irritant or inflammatory",
+        "items": [
+          "Nappy, soap or bubble-bath irritation",
+          "Poor or over-vigorous hygiene",
+          "Eczema or contact dermatitis",
+          "Retained smegma"
+        ]
+      },
+      {
+        "name": "Pathological",
+        "items": [
+          "Balanitis xerotica obliterans (lichen sclerosus)",
+          "Diabetes: recurrent balanitis"
+        ]
+      },
+      {
+        "name": "Must not miss",
+        "items": [
+          "Paraphimosis (foreskin stuck, urgent)",
+          "Testicular torsion (testicular pain)",
+          "UTI",
+          "Diabetes if recurrent"
+        ]
+      }
+    ]
+  },
+  "tables": [
+    {
+      "title": "Physiological vs pathological phimosis",
+      "headers": [
+        "Feature",
+        "Physiological",
+        "Pathological"
+      ],
+      "rows": [
+        [
+          "Typical age",
+          "Common in young boys; usually separates by teenage years (verify)",
+          "Scarring, white ring, ballooning"
+        ],
+        [
+          "Action",
+          "Reassure, no forced retraction",
+          "Refer"
+        ]
+      ]
+    }
+  ],
+  "investigations": [
+    {
+      "test": "Examination of foreskin, glans, urethral meatus, testes",
+      "why": "Exclude paraphimosis and torsion"
+    },
+    {
+      "test": "Swab if discharge or no response",
+      "why": "Guide antimicrobial choice"
+    },
+    {
+      "test": "Urine dip; consider glucose",
+      "why": "UTI and diabetes if recurrent"
+    }
+  ],
+  "management": [
+    "Saline or warm bathing, gentle hygiene without forced retraction.",
+    "Avoid soaps and irritants, keep the area dry.",
+    "Topical antimicrobial only if indicated (check BNFc).",
+    "Safety-netting: return if swelling, pain passing urine, fever, or no improvement in a few days.",
+    "Refer to paediatric surgery or urology for recurrent episodes, scarring or pathological phimosis."
+  ],
+  "redFlags": [
+    "Foreskin stuck behind the glans (paraphimosis)",
+    "Fever, systemic upset or urinary retention",
+    "Suspicion of non-accidental injury or abuse",
+    "Recurrent balanitis (check glucose)",
+    "White scarred foreskin"
+  ],
+  "pearls": [
+    "Do not forcibly retract the foreskin.",
+    "Explain hygiene to the parent and child kindly and without blame."
+  ],
+  "lookUp": [
+    "NICE CKS balanitis and when to refer",
+    "Age at which foreskin normally retracts",
+    "Circumcision indications"
+  ],
+  "selfTest": [
+    {
+      "q": "What urgent complication must you exclude?",
+      "a": "Paraphimosis; also torsion if testicular pain."
+    },
+    {
+      "q": "Why consider glucose in recurrent balanitis?",
+      "a": "It may be the first sign of diabetes."
+    }
+  ],
+  "sources": [
+    "NICE CKS: Balanitis",
+    "RCPCH",
+    "BNFc (verify)"
+  ]
+}

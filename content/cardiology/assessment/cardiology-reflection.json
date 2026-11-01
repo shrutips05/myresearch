@@ -1,0 +1,11 @@
+{
+  "id": "cardiology-reflection",
+  "title": "Cardiology: reflection and OSCE prompts",
+  "type": "Reflection",
+  "description": "ECG, chest pain and examination practice.",
+  "questions": [
+    { "q": "Describe the order I use to interpret an ECG.", "answer": "Model: patient details, rate, rhythm, axis, P wave, PR interval, QRS, ST segment, T wave, QT." },
+    { "q": "OSCE: Take a history from a patient with chest pain.", "answer": "Model: SOCRATES, associated symptoms, risk factors, past history, drugs, family and social history, red flags." },
+    { "q": "OSCE: Perform a cardiovascular examination.", "answer": "Model: introduce, hands, pulse, BP, JVP, face, praecordium (inspect, palpate, auscultate), peripheral oedema, thank the patient." }
+  ]
+}

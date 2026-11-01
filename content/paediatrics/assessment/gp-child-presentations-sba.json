@@ -1,0 +1,56 @@
+{
+  "id": "gp-child-presentations-sba",
+  "title": "Child presentations in GP: SBAs",
+  "type": "SBA",
+  "description": "Balanitis, hearing and new type 1 diabetes in children.",
+  "questions": [
+    {
+      "q": "A child has polyuria, thirst and weight loss. Capillary glucose is 18 mmol/L and ketones are positive. Best next step?",
+      "options": [
+        "Repeat in a week",
+        "Arrange HbA1c and review",
+        "Same-day referral to the paediatric team",
+        "Start oral hypoglycaemics",
+        "Dietary advice"
+      ],
+      "answer": 2,
+      "explanation": "Suspected T1DM with ketosis needs same-day specialist care."
+    },
+    {
+      "q": "A boy has a painful foreskin pulled back that cannot be returned. Diagnosis?",
+      "options": [
+        "Balanitis",
+        "Paraphimosis",
+        "Phimosis",
+        "Torsion",
+        "Hernia"
+      ],
+      "answer": 1,
+      "explanation": "Paraphimosis is an urgent emergency."
+    },
+    {
+      "q": "Commonest cause of conductive hearing loss in children?",
+      "options": [
+        "Wax",
+        "Perforation",
+        "Otitis media with effusion",
+        "Otosclerosis",
+        "Cholesteatoma"
+      ],
+      "answer": 2,
+      "explanation": "Glue ear is the commonest cause."
+    },
+    {
+      "q": "A child with recurrent balanitis. Which test should be considered?",
+      "options": [
+        "Glucose",
+        "CRP",
+        "Chest X-ray",
+        "Hearing test",
+        "Thyroid scan"
+      ],
+      "answer": 0,
+      "explanation": "Recurrent balanitis can signal diabetes."
+    }
+  ]
+}

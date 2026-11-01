@@ -1,0 +1,139 @@
+{
+  "id": "hearing-loss-child",
+  "title": "Hearing concerns in a child",
+  "date": "2026-11-01",
+  "setting": "GP surgery, child (age to confirm)",
+  "tags": [
+    "ENT",
+    "development",
+    "audiology"
+  ],
+  "presentation": "A child brought with parental concern about hearing. Age to be added.",
+  "framework": {
+    "title": "Type of hearing loss",
+    "groups": [
+      {
+        "name": "Conductive",
+        "items": [
+          "Otitis media with effusion (glue ear), the commonest",
+          "Acute otitis media",
+          "Wax",
+          "Perforation",
+          "Foreign body"
+        ]
+      },
+      {
+        "name": "Sensorineural",
+        "items": [
+          "Congenital (genetic, CMV)",
+          "Perinatal (prematurity, jaundice, ototoxic drugs)",
+          "Meningitis",
+          "Syndromes"
+        ]
+      },
+      {
+        "name": "Contributing or mimics",
+        "items": [
+          "Speech and language delay",
+          "Autism",
+          "Attention problems"
+        ]
+      },
+      {
+        "name": "Risk factors",
+        "items": [
+          "Family history",
+          "NICU stay",
+          "Craniofacial anomaly",
+          "Down syndrome",
+          "Congenital infection"
+        ]
+      }
+    ]
+  },
+  "tables": [
+    {
+      "title": "Developmental hearing milestones (verify)",
+      "headers": [
+        "Age",
+        "Expected"
+      ],
+      "rows": [
+        [
+          "Newborn",
+          "Startles to loud noise; newborn hearing screen"
+        ],
+        [
+          "6 months",
+          "Turns to voice"
+        ],
+        [
+          "12 months",
+          "Responds to own name, babbles"
+        ],
+        [
+          "2 years",
+          "Understands simple commands; words"
+        ]
+      ]
+    }
+  ],
+  "investigations": [
+    {
+      "test": "Otoscopy",
+      "why": "Effusion, wax, perforation"
+    },
+    {
+      "test": "Check newborn hearing screen result",
+      "why": "Past or missed screen"
+    },
+    {
+      "test": "Audiology referral",
+      "why": "Formal assessment"
+    },
+    {
+      "test": "Tympanometry",
+      "why": "Confirms middle-ear effusion"
+    }
+  ],
+  "management": [
+    "Ask parents what they have noticed: ICE, speech, school, behaviour.",
+    "Examine ears and look for syndromic features.",
+    "Refer to audiology if concern persists, even with a normal screen.",
+    "Glue ear: watchful waiting, then ENT if persistent with impact (follow NICE).",
+    "Safety-netting: return with ear pain, discharge, or fever, or if speech is worsening."
+  ],
+  "redFlags": [
+    "Parental concern (take seriously)",
+    "Speech or language delay",
+    "Regression",
+    "Unilateral or sudden loss",
+    "Meningitis history",
+    "Failed newborn screen",
+    "Facial weakness or vertigo"
+  ],
+  "pearls": [
+    "Parental concern is a strong predictor: always act on it.",
+    "A normal newborn screen does not exclude later loss."
+  ],
+  "lookUp": [
+    "NICE glue ear guidance (NG233) and referral thresholds",
+    "Newborn hearing screening pathway",
+    "Impact on language development"
+  ],
+  "selfTest": [
+    {
+      "q": "Commonest cause of conductive loss in children?",
+      "a": "Otitis media with effusion."
+    },
+    {
+      "q": "Child passed newborn screening but parents worry. Action?",
+      "a": "Refer to audiology; later loss can occur."
+    }
+  ],
+  "sources": [
+    "NICE NG233 Otitis media with effusion (verify)",
+    "NHS Newborn Hearing Screening Programme",
+    "RCPCH"
+  ]
+}

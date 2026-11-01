@@ -1,0 +1,16 @@
+{
+  "name": "Cardiology",
+  "icon": "❤️",
+  "summary": "Cardiovascular history, examination and ECG interpretation, with emphasis on chest pain and heart failure.",
+  "placementFocus": ["Cardiovascular examination", "ECG interpretation", "Chest pain assessment", "Heart failure and arrhythmia basics"],
+  "coreTopics": ["Cardiovascular examination", "Systematic ECG interpretation", "Acute coronary syndrome", "Heart failure", "Atrial fibrillation", "Murmurs", "Hypertension"],
+  "recommendations": [
+    "Read ECGs in the same order every time (rate, rhythm, axis, P waves, PR, QRS, ST, T, QT).",
+    "Learn the cardiac cycle first; murmurs and heart sounds follow from it.",
+    "Practise the cardiovascular exam to a fixed script until it is fluent."
+  ],
+  "resources": [
+    { "name": "NICE Chest pain CG95", "url": "https://www.nice.org.uk/guidance/cg95" },
+    { "name": "Resuscitation Council UK", "url": "https://www.resus.org.uk/" }
+  ]
+}

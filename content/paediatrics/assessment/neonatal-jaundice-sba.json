@@ -1,0 +1,26 @@
+{
+  "id": "neonatal-jaundice-sba",
+  "title": "Neonatal jaundice: SBAs",
+  "type": "SBA",
+  "description": "Single best answer questions on classification, timing and pathway.",
+  "questions": [
+    {
+      "q": "A term baby is jaundiced at 18 hours of age. What is the most appropriate interpretation?",
+      "options": ["Physiological jaundice", "Breast milk jaundice", "Pathological jaundice needing urgent assessment", "Gilbert's syndrome", "Biliary atresia"],
+      "answer": 2,
+      "explanation": "Jaundice in the first 24 hours is always pathological until proven otherwise; haemolysis is the key concern."
+    },
+    {
+      "q": "A 3-week-old term baby has jaundice, pale stools and dark urine. Which result is most likely?",
+      "options": ["Raised unconjugated bilirubin only", "Raised conjugated bilirubin", "Normal bilirubin", "Low haemoglobin", "Low TSH only"],
+      "answer": 1,
+      "explanation": "Pale stools and dark urine indicate obstructive (conjugated) jaundice, for example biliary atresia."
+    },
+    {
+      "q": "Which of the following is a pre-hepatic cause of jaundice?",
+      "options": ["Biliary atresia", "Choledochal cyst", "G6PD deficiency", "Galactosaemia", "Hepatitis"],
+      "answer": 2,
+      "explanation": "G6PD deficiency causes haemolysis and so increased bilirubin production."
+    }
+  ]
+}

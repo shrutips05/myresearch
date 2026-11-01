@@ -1,0 +1,18 @@
+{
+  "name": "Paediatrics (0-2 years)",
+  "icon": "👶",
+  "summary": "Ward-based learning with babies and infants. Focus on age-specific presentations, developmental context and family communication.",
+  "placementFocus": ["Systematic approach to the unwell infant", "Age-appropriate history and examination", "Feeding, growth and development", "Safeguarding awareness"],
+  "coreTopics": ["Neonatal jaundice", "Bronchiolitis", "Febrile infant", "Feeding difficulties and reflux", "Gastroenteritis and dehydration", "Developmental milestones", "Newborn examination", "Safeguarding basics"],
+  "recommendations": [
+    "Use a fixed framework (cause by system or by pathway) for every presentation and write it down after the ward.",
+    "Practise infant observation: colour, tone, breathing effort, hydration, interaction.",
+    "Learn normal ranges for heart rate, respiratory rate and weight by age before learning abnormal.",
+    "Ask to observe a newborn check and a parent counselling conversation."
+  ],
+  "resources": [
+    { "name": "NICE NG98 Neonatal jaundice", "url": "https://www.nice.org.uk/guidance/ng98" },
+    { "name": "NICE CKS Paediatrics topics", "url": "https://cks.nice.org.uk/" },
+    { "name": "RCPCH resources", "url": "https://www.rcpch.ac.uk/" }
+  ]
+}

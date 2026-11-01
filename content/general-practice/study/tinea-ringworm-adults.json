@@ -1,0 +1,127 @@
+{
+  "id": "tinea-ringworm-adults",
+  "title": "Tinea (ringworm) in adults",
+  "date": "2026-11-01",
+  "setting": "GP surgery, adult",
+  "tags": [
+    "dermatology",
+    "fungal",
+    "skin"
+  ],
+  "presentation": "An adult with an itchy, scaly, annular rash with a raised edge and central clearing.",
+  "framework": {
+    "title": "Likely vs must not miss",
+    "groups": [
+      {
+        "name": "Likely",
+        "items": [
+          "Tinea corporis (body)",
+          "Tinea cruris (groin)",
+          "Tinea pedis (athlete's foot)",
+          "Tinea unguium (nail)",
+          "Tinea capitis (scalp; rarer in adults)"
+        ]
+      },
+      {
+        "name": "Differentials (annular or scaly rash)",
+        "items": [
+          "Eczema (nummular)",
+          "Psoriasis",
+          "Pityriasis rosea",
+          "Granuloma annulare",
+          "Impetigo",
+          "Cutaneous lupus"
+        ]
+      },
+      {
+        "name": "Likely sources",
+        "items": [
+          "Human to human",
+          "Animals (cats, dogs, cattle)",
+          "Fomites (towels, changing rooms)",
+          "Own feet or nails (autoinoculation)"
+        ]
+      },
+      {
+        "name": "Refer or escalate when",
+        "items": [
+          "Scalp or nail disease",
+          "Extensive or recurrent infection",
+          "Immunosuppression",
+          "Diagnosis uncertain or no response to treatment"
+        ]
+      }
+    ]
+  },
+  "tables": [
+    {
+      "title": "Site and usual approach (check CKS and BNF)",
+      "headers": [
+        "Site",
+        "Usual approach"
+      ],
+      "rows": [
+        [
+          "Body, groin, feet",
+          "Topical antifungal"
+        ],
+        [
+          "Extensive, nail or scalp",
+          "Skin scraping or nail clippings for mycology; oral antifungal is usually needed"
+        ],
+        [
+          "Inflamed or itchy rash",
+          "Avoid topical steroid alone; it can mask the rash (tinea incognito)"
+        ]
+      ]
+    }
+  ],
+  "investigations": [
+    {
+      "test": "Skin scrapings, nail clippings or hair for mycology",
+      "why": "Confirm before oral treatment, and when the diagnosis is unclear, widespread or nail or scalp disease"
+    },
+    {
+      "test": "Consider LFTs or drug review before oral antifungals",
+      "why": "Hepatotoxicity and interactions"
+    }
+  ],
+  "management": [
+    "Topical antifungal for localised disease; continue after the rash clears (check CKS for duration).",
+    "Treat the feet as well as the groin if both are affected.",
+    "Hygiene: do not share towels, dry skin folds, change socks, wash clothing and bedding hot.",
+    "Identify and treat the source, including pets.",
+    "Avoid steroid-only creams.",
+    "Safety-netting: review if no improvement in 2 weeks, or if spreading, painful, weeping or with fever."
+  ],
+  "redFlags": [
+    "Immunosuppression or diabetes with extensive or recurrent disease",
+    "Secondary bacterial infection (pus, cellulitis)",
+    "Scalp involvement with kerion",
+    "Failure to respond: reconsider the diagnosis"
+  ],
+  "pearls": [
+    "Annular scaly rash with an active edge and central clearing = think tinea, but scrape if unsure.",
+    "Ask about pets and contacts as well as treatment history."
+  ],
+  "lookUp": [
+    "NICE CKS thresholds for oral treatment and mycology",
+    "Which topical agents are first line locally (BNF and formulary)",
+    "Recurrent tinea and underlying diabetes screening"
+  ],
+  "selfTest": [
+    {
+      "q": "Why avoid hydrocortisone alone on a suspected tinea?",
+      "a": "It suppresses inflammation and alters the appearance (tinea incognito) while the fungus persists."
+    },
+    {
+      "q": "When should you take samples for mycology?",
+      "a": "Before oral therapy, for nail or scalp disease, extensive disease, or an uncertain diagnosis."
+    }
+  ],
+  "sources": [
+    "NICE CKS: Fungal skin infection - body and groin",
+    "NICE CKS: Fungal skin infection - foot",
+    "BNF"
+  ]
+}

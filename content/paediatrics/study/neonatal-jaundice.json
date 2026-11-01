@@ -1,0 +1,82 @@
+{
+  "id": "neonatal-jaundice",
+  "title": "Neonatal jaundice",
+  "date": "2026-11-01",
+  "setting": "Paediatric ward, 0-2 years",
+  "tags": ["jaundice", "neonatology", "hepatology", "bilirubin"],
+  "presentation": "A baby admitted with jaundice. Consultant asked: why might a baby be admitted with jaundice, and what is the systematic way to think about causes?",
+  "framework": {
+    "title": "Pre-hepatic, hepatic, post-hepatic",
+    "groups": [
+      { "name": "Pre-hepatic (too much bilirubin produced)", "items": ["ABO or rhesus incompatibility", "G6PD deficiency", "Hereditary spherocytosis", "Cephalohaematoma or bruising", "Polycythaemia"] },
+      { "name": "Hepatic (impaired uptake or conjugation)", "items": ["Physiological jaundice", "Breast milk jaundice", "Prematurity", "Gilbert's and Crigler-Najjar", "Hypothyroidism", "Sepsis or UTI", "Galactosaemia", "Neonatal hepatitis"] },
+      { "name": "Post-hepatic (obstruction to bile flow)", "items": ["Biliary atresia", "Choledochal cyst", "Inspissated bile", "Alagille syndrome"] }
+    ]
+  },
+  "pathway": {
+    "title": "Bilirubin pathway",
+    "mermaid": "flowchart LR\n A[Red cell breakdown] --> B[Haem to biliverdin to unconjugated bilirubin]\n B --> C[Bound to albumin in blood]\n C --> D[Hepatocyte uptake]\n D --> E[Conjugation by UGT1A1]\n E --> F[Conjugated bilirubin into bile]\n F --> G[Gut: urobilinogen and stercobilin]\n G --> H[Stool colour]\n G --> I[Reabsorbed: enterohepatic circulation]\n I --> J[Urine urobilinogen]\n I --> D"
+  },
+  "tables": [
+    {
+      "title": "Causes by timing",
+      "headers": ["Timing", "Likely cause", "Comment"],
+      "rows": [
+        ["First 24 hours", "Haemolysis (ABO, rhesus, G6PD), infection", "Always pathological; urgent assessment"],
+        ["Day 2 to 14", "Physiological, breast milk or feeding-related", "Most common; still assess hydration and feeding"],
+        ["Beyond 14 days (term) or 21 days (preterm)", "Prolonged jaundice: biliary atresia, hypothyroidism, UTI, breast milk", "Needs split bilirubin to exclude conjugated jaundice"]
+      ]
+    },
+    {
+      "title": "Unconjugated versus conjugated",
+      "headers": ["Feature", "Unconjugated", "Conjugated"],
+      "rows": [
+        ["Mechanism", "Excess production or poor conjugation", "Obstruction or hepatocellular injury"],
+        ["Stool and urine", "Normal stool, normal urine", "Pale stool, dark urine"],
+        ["Significance", "Risk of kernicterus when very high", "Never physiological; always investigate"]
+      ]
+    }
+  ],
+  "investigations": [
+    { "test": "Serum bilirubin (total and split)", "why": "Quantifies jaundice and separates conjugated from unconjugated" },
+    { "test": "Blood group and direct Coombs test", "why": "Detects immune haemolysis" },
+    { "test": "FBC and film, reticulocytes", "why": "Looks for haemolysis or polycythaemia" },
+    { "test": "G6PD assay", "why": "Common cause of haemolysis in at-risk ethnic groups" },
+    { "test": "Urine culture and blood culture if unwell", "why": "Infection causes jaundice" },
+    { "test": "Thyroid function (usually newborn screen)", "why": "Hypothyroidism causes prolonged jaundice" },
+    { "test": "Liver function tests, clotting, imaging", "why": "For conjugated jaundice and suspected biliary obstruction" }
+  ],
+  "management": [
+    "Plot bilirubin on the NICE treatment threshold chart for gestational age and age in hours.",
+    "Phototherapy converts unconjugated bilirubin to water-soluble isomers.",
+    "Exchange transfusion for severe hyperbilirubinaemia or rapid rise (specialist decision).",
+    "Support feeding and hydration.",
+    "Refer urgently if conjugated jaundice is found."
+  ],
+  "redFlags": [
+    "Jaundice in the first 24 hours",
+    "Pale stool or dark urine",
+    "Prolonged jaundice beyond 14 or 21 days",
+    "Lethargy, poor feeding, high-pitched cry or arching (possible bilirubin encephalopathy)",
+    "Conjugated bilirubin elevated"
+  ],
+  "pearls": [
+    "Think pathway: where in the pathway is the block, before, in, or after the liver?",
+    "Conjugated jaundice is never normal in a newborn.",
+    "Check the stool colour. It is quick and tells you about bile flow."
+  ],
+  "lookUp": [
+    "Why is bilirubin neurotoxic in newborns but not in adults? (blood-brain barrier, albumin binding)",
+    "Mechanism of phototherapy",
+    "Why breast milk jaundice differs from breastfeeding jaundice",
+    "Kasai procedure timing in biliary atresia"
+  ],
+  "selfTest": [
+    { "q": "Name the three levels used to classify the causes of jaundice.", "a": "Pre-hepatic, hepatic (intrahepatic) and post-hepatic." },
+    { "q": "Which enzyme conjugates bilirubin?", "a": "UDP-glucuronosyltransferase 1A1 (UGT1A1)." },
+    { "q": "Why are the stools pale and urine dark in obstructive jaundice?", "a": "Conjugated bilirubin cannot reach the gut, so no stercobilin forms; conjugated bilirubin is water-soluble and spills into urine." },
+    { "q": "What does jaundice in the first 24 hours suggest?", "a": "Pathological cause, typically haemolysis or infection." },
+    { "q": "What test is needed for jaundice beyond 14 days in a term baby?", "a": "A split (conjugated and unconjugated) bilirubin." }
+  ],
+  "sources": ["NICE NG98 Jaundice in newborn babies under 28 days (verify thresholds against current version)", "Local trust neonatal jaundice guideline"]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "General Practice",
+  "icon": "🩺",
+  "summary": "Community-based care: undifferentiated presentations, continuity, long-term conditions and shared decision making.",
+  "placementFocus": ["Consultation structure", "Managing uncertainty and safety-netting", "Long-term condition reviews", "Health promotion and prevention"],
+  "coreTopics": ["Consultation models (Calgary-Cambridge)", "Chest pain in primary care", "Hypertension and diabetes reviews", "Common skin conditions", "Safety-netting", "Prescribing basics", "Referral and red-flag pathways"],
+  "recommendations": [
+    "Observe how the GP opens, explores the patient's ideas, concerns and expectations, and closes a consultation.",
+    "Keep a list of presentations and the 'worst case first' differential for each.",
+    "Practise a short, jargon-free explanation for each condition you see."
+  ],
+  "resources": [
+    { "name": "NICE CKS", "url": "https://cks.nice.org.uk/" },
+    { "name": "RCGP", "url": "https://www.rcgp.org.uk/" }
+  ]
+}
