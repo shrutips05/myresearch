@@ -50,3 +50,8 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
 .muted { color: var(--muted); font-size: .9rem; }
 @media (max-width: 760px) { body { flex-direction: column; } .sidebar { width: 100%; height: auto; position: static; } }
 @media print { .sidebar, .tabs, button { display: none !important; } body { display: block; background: #fff; } main { max-width: none; padding: 0; } }
+textarea { width: 100%; font: inherit; padding: 8px; border: 1px solid var(--line); border-radius: 6px; }
+.notetext { white-space: pre-wrap; margin-top: 4px; }
+.note { margin: 8px 0; }
+input:not([type=checkbox]), select { width: 100%; font: inherit; padding: 8px; border: 1px solid var(--line); border-radius: 6px; }
+.diary label { display: block; margin: 12px 0 4px; }

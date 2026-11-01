@@ -52,6 +52,14 @@ content/
 3. Append `{ "slug", "study": [], "assessment": [] }` to `content/manifest.json`.
 4. Create `.github/skills/<slug>-content/SKILL.md` by copying the structure of an existing specialty skill (frameworks, note requirements, assessment ideas, sources, maintenance log), and add it to the table above.
 
+## File diary entries
+
+Entries from the site's Placement Diary are JSON in `content/documents/diary/` (fields: date, specialty, setting, topic, presentation, investigations, management, other, filed). When asked to file them:
+
+1. Read every entry with `"filed": false`. Group by specialty; if the specialty is blank, choose from the content. Create a new specialty if none fits.
+2. Convert each to a study note: presentation to `presentation` and `framework` (likely vs must-not-miss), investigations to `investigations`/`tables`, management to `management`, the rest to `pearls`. Presentation and investigations are the priority at phase 2, so make them the most detailed. Fill gaps from UK sources and mark unverified items `"verify": true`. Merge into an existing note on the same topic rather than duplicating.
+3. Anonymise, register in `content/manifest.json`, validate JSON, then set `"filed": true` and add `"filedTo": "<slug>/study/<id>"` in the diary entry.
+
 ## Rules
 
 - Anonymise: no names, DOB, hospital numbers, ward or hospital names, exact dates of events. Use "a 5-day-old term baby".

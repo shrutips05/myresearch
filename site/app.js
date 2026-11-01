@@ -30,7 +30,7 @@ const progress = (sp) => {
 };
 
 function renderNav(active) {
-  nav.innerHTML = `<a href="#/" class="${active === '' ? 'active' : ''}">Dashboard</a>` +
+  nav.innerHTML = `<a href="#/" class="${active === '' ? 'active' : ''}">Dashboard</a><a href="#/diary" class="${active === 'diary' ? 'active' : ''}">Placement Diary</a><a href="#/notes" class="${active === 'notes' ? 'active' : ''}">My Notes</a>` +
     specialties.map((s) => `<a href="#/${s.slug}" class="${active === s.slug ? 'active' : ''}"><span>${esc(s.overview.icon)} ${esc(s.overview.name)}</span><span class="pct">${progress(s).pct}%</span></a>`).join('');
 }
 
@@ -162,11 +162,85 @@ function bind(sp, view) {
   }
 }
 
+async function diaryPage() {
+  const today = new Date().toISOString().slice(0, 10);
+  const area = (id, label, rows, hint) => `<label for="${id}"><strong>${label}</strong> <span class="muted">${hint}</span></label><textarea id="${id}" rows="${rows}" maxlength="20000"></textarea>`;
+  app.innerHTML = `<h1>Placement Diary</h1>
+    <p class="muted">Record what you learnt today, one case or topic per entry. Entries are saved to content/documents/diary/ and then filed into the right specialty folder as study notes (ask Copilot: "file my diary entries"). No names, dates of birth, hospital numbers or ward names.</p>
+    <form id="diaryForm" class="diary">
+      <div class="cols">
+        <div><label for="dDate">Date</label><input id="dDate" type="date" value="${today}" required></div>
+        <div><label for="dSpec">Specialty</label><input id="dSpec" list="specList" placeholder="e.g. paediatrics, or a new one"><datalist id="specList">${specialties.map((s) => `<option value="${esc(s.slug)}">`).join('')}</datalist></div>
+        <div><label for="dSetting">Setting</label><input id="dSetting" placeholder="e.g. GP surgery, ward, clinic"></div>
+      </div>
+      <label for="dTopic">Topic or presenting problem</label><input id="dTopic" placeholder="e.g. Child with a limp">
+      ${area('dPres', '1. Presentation', 8, 'History, examination, red flags, likely vs must-not-miss differentials, how to tell them apart')}
+      ${area('dInv', '2. Investigations', 6, 'What was done or could be done, why, what you expect to find, how to interpret it')}
+      ${area('dMan', '3. Management', 4, 'Initial, definitive, safety-netting, escalation')}
+      ${area('dOther', 'Other learning', 3, 'Communication, professionalism, tips, things to look up')}
+      <p><button type="submit">Save</button> <button type="button" class="secondary" id="dCancel">Cancel</button> <span id="dMsg" class="muted"></span></p>
+    </form>
+    <h2>Diary entries</h2><div id="dList"></div>`;
+  const msg = app.querySelector('#dMsg');
+  const ids = ['dTopic', 'dPres', 'dInv', 'dMan', 'dOther'];
+  const clear = () => ids.forEach((i) => { app.querySelector('#' + i).value = ''; });
+  const section = (t, v) => v ? `<h4>${t}</h4><div class="notetext">${esc(v)}</div>` : '';
+  const show = (items) => {
+    app.querySelector('#dList').innerHTML = items.length ? items.slice().reverse().map((e) => `<div class="card note"><div class="muted"><strong>Saved ${esc(e.saved || e.date)}</strong> · for ${esc(e.date)} · ${esc(e.specialty || 'unassigned')}${e.setting ? ' · ' + esc(e.setting) : ''} · ${e.filed ? 'filed' : 'not yet filed'}</div><strong>${esc(e.topic || 'Untitled')}</strong>${section('Presentation', e.presentation)}${section('Investigations', e.investigations)}${section('Management', e.management)}${section('Other', e.other)}</div>`).join('') : '<p class="empty">No entries yet.</p>';
+  };
+  const reload = async () => {
+    try { const r = await fetch('/api/diary'); if (!r.ok) throw 0; show(await r.json()); }
+    catch { msg.textContent = 'The diary needs the notes server: stop the current server and run python3 server.py'; }
+  };
+  app.querySelector('#dCancel').addEventListener('click', () => { clear(); msg.textContent = 'Cancelled, nothing saved'; });
+  app.querySelector('#diaryForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const v = (i) => app.querySelector('#' + i).value;
+    const body = { date: v('dDate'), specialty: v('dSpec'), setting: v('dSetting'), topic: v('dTopic'), presentation: v('dPres'), investigations: v('dInv'), management: v('dMan'), other: v('dOther') };
+    try {
+      const r = await fetch('/api/diary', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+      if (!r.ok) { msg.textContent = (await r.json()).error || 'Could not save'; return; }
+      const saved = await r.json(); clear(); msg.textContent = `Saved ${saved.saved}`; await reload();
+    } catch { msg.textContent = 'Could not save. Stop the current server and run python3 server.py'; }
+  });
+  await reload();
+}
+
+async function notesPage() {
+  app.innerHTML = `<h1>My Notes</h1><p class="muted">Saved with date and time to content/documents/notes-log.txt. No patient-identifiable information.</p>
+    <form id="noteForm"><textarea id="noteText" rows="4" maxlength="20000" placeholder="Write a note" aria-label="New note" required></textarea>
+    <p><button type="submit">Save</button> <button type="button" class="secondary" id="noteCancel">Cancel</button> <span id="noteMsg" class="muted"></span></p></form><div id="noteList"></div>`;
+  const listEl = app.querySelector('#noteList');
+  const msg = app.querySelector('#noteMsg');
+  const show = (notes) => {
+    listEl.innerHTML = notes.length ? notes.slice().reverse().map((n) => `<div class="card note"><div class="muted">${esc(n.time)}</div><div class="notetext">${esc(n.text)}</div></div>`).join('') : '<p class="empty">No notes yet.</p>';
+  };
+  const reload = async () => {
+    try { const r = await fetch('/api/notes'); if (!r.ok) throw 0; show(await r.json()); }
+    catch { msg.textContent = 'Notes need the notes server: stop the current server and run python3 server.py'; }
+  };
+  app.querySelector('#noteCancel').addEventListener('click', () => {
+    app.querySelector('#noteText').value = ''; msg.textContent = 'Cancelled, nothing saved';
+  });
+  app.querySelector('#noteForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const ta = app.querySelector('#noteText');
+    try {
+      const r = await fetch('/api/notes', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ text: ta.value }) });
+      if (!r.ok) throw 0;
+      ta.value = ''; msg.textContent = 'Saved'; await reload();
+    } catch { msg.textContent = 'Could not save. Run python3 server.py'; }
+  });
+  await reload();
+}
+
 async function route() {
   const parts = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean);
   const [slug, tab = 'overview', id] = parts;
   renderNav(slug || '');
   if (!slug) { app.innerHTML = dashboard(); return; }
+  if (slug === 'diary') { await diaryPage(); return; }
+  if (slug === 'notes') { await notesPage(); return; }
   const sp = specialties.find((s) => s.slug === slug);
   if (!sp) { app.innerHTML = '<p class="empty">Page not found.</p>'; return; }
   let view;

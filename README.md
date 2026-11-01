@@ -7,9 +7,13 @@ A personal, local study website for medical placements. Content lives in JSON fi
 ## Run the site
 
 1. Open a terminal in this folder.
-2. Run `python3 -m http.server 8000`.
+2. Run `python3 server.py` (serves the site and saves notes; plain `python3 -m http.server 8000` still shows the site but cannot save notes).
 3. Open `http://localhost:8000/site/` in your browser.
 4. Stop the server with `Ctrl+C`.
+
+## Notes log
+
+Open **My Notes** in the sidebar to add and read notes. Each is appended with date and time to `content/documents/notes-log.txt`.
 
 Opening `site/index.html` by double-clicking will not work, because the page needs to load the JSON files.
 
@@ -107,3 +111,7 @@ Edit `coreTopics`, `recommendations` or `resources` in `content/<specialty>/over
 - No names, dates of birth, hospital numbers, ward or hospital names, or rare identifying details.
 - Keep the folder private. If you use git, use a private repository.
 - Follow Warwick and GMC confidentiality guidance for all notes.
+
+## Placement diary
+
+Open **Placement Diary** to record each day's learning by presentation, investigations and management. Entries are saved as JSON in `content/documents/diary/` with `"filed": false`. Ask Copilot to "file my diary entries" and they are turned into study notes (and a new specialty if needed) under `content/`, then marked `"filed": true`.
